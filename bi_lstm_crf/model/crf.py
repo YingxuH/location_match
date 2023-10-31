@@ -90,7 +90,7 @@ class CRF(nn.Module):
         score = ((trans_scores + emit_scores) * masks).sum(1) + last_score
         return score
 
-    def __viterbi_decode(self, features, masks):
+    def   __viterbi_decode(self, features, masks):
         """decode to tags using viterbi algorithm
 
         :param features: [B, L, C], batch of unary scores
